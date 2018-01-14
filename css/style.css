@@ -21,16 +21,6 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
 /* ==========================================================================
    Index:         
   1. BASE STYLES   
@@ -80,9 +70,6 @@ body {
   padding-bottom: 0px;
 }
 
-
-
-
 .separator {
     width: 100%;
     margin: 0;
@@ -96,8 +83,6 @@ body {
 .separator--lg {
     margin-top: 50px;
 }
-
-
 
 
 
@@ -135,13 +120,6 @@ h4 {
   color:#000000;
 }
 
-
-
-
-
-
-
-
 /* 2.2 - Header */
 
 
@@ -165,11 +143,13 @@ background: #0084ff;
 a.navbar-brand.navbar-link { height: 100%; }
 
 
-
+.navbar-dark .navbar-nav .nav-link {
+  color: rgb(255,255,255);
+}
 .bg-dark {
   background-color: #0084ff!important;
+  box-shadow: 0 5px 15px 0 rgba(0,0,0,0.15);
 }
-
 
 
 /* SECTION intro */
@@ -183,12 +163,10 @@ a.navbar-brand.navbar-link { height: 100%; }
 }
 
 
-
 ul.negative,ul.positive {
   margin-top:15px;
   margin-left:32px;
 } 
-
 
 ul.negative li.negative,ul.positive li.positive{
   font-family:'Lato-Medium';
@@ -210,28 +188,6 @@ ul.positive li.positive {
   background-image:url('http://via.placeholder.com/40x40');
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* SECTION clients */
 
 
@@ -240,10 +196,13 @@ ul.positive li.positive {
 }
 
 .clients .logo-wrapper {
-    padding: 35px 0;
+  padding: 35px 0;
 }
 
-
+.hover-tab a:hover {
+  color: #0056b3;
+  text-decoration: none;
+}
 
 
 /* SECTION how it works */
@@ -268,12 +227,6 @@ bottom: 0;
   right: 0;
   width: 180px
 }
-
-
-
-
-
-
 
 /* SECTION call to action */
 
@@ -304,8 +257,6 @@ bottom: 0;
 }
 
 
-
-
 /* SECTION feature index */
 
 .feature-index{
@@ -324,14 +275,6 @@ background: #f5faff;
 .card-block p {
   color: #a7b2bd;
 }
-
-
-
-
-
-
-
-
 
 
 /* 2.4 - Footer */
@@ -370,8 +313,6 @@ ul.legal{
 }
 
 
-
-
 /* 4.2 - buttons */
 
 .btn-tbb{
@@ -387,18 +328,7 @@ ul.legal{
   color:#0084ff;
 }
 
-
-
-
 /* 4.3 - icons */
-
-.icon .icon-messenger {
-
-}
-
-
-
-
 
 
 
