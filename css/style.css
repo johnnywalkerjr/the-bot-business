@@ -1,0 +1,419 @@
+
+
+@font-face {
+    font-family: 'Lato-Bold';
+    src: url('fonts/Lato-Bold.eot');
+    src: url('fonts/Lato-Bold.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Lato-Bold.woff') format('woff'),
+         url('fonts/Lato-Bold.ttf') format('truetype'),
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato-Medium';
+    src: url('fonts/Lato-Medium.eot');
+    src: url('fonts/Lato-Medium.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Lato-Medium.woff') format('woff'),
+         url('fonts/Lato-Medium.ttf') format('truetype'),
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Index:         
+  1. BASE STYLES   
+    1.1 - Base
+    1.2 - Typography
+  2. STRUCTURE
+    2.1 - Structure
+    2.2 - Header
+    2.3 - Content
+    2.4 - Footer
+  3. MAIN NAVIGATION
+    3.1 - Custom Menu Primary
+    3.2 - Mobile Menu
+  4. COMPONENTS
+    4.1 - Forms
+    4.2 - Buttons
+    4.3 - Icons
+  5. MISCELLANOUS
+  6. MOBILE MEDIA QUERIES
+   ========================================================================== */
+
+
+
+
+/*1.2 - Typography*/
+
+
+
+body {
+ 
+}
+
+.section {
+  padding:50px 0px;
+}
+
+.section h2 {
+  font-size:42px;
+  color:#000;
+}
+
+.no-bottom-margin {
+  margin-bottom: 0px;
+}
+
+.no-bottom-padding {
+  padding-bottom: 0px;
+}
+
+
+
+
+.separator {
+    width: 100%;
+    margin: 0;
+}
+.separator--sm {
+    margin-top: 15px;
+}
+.separator--md {
+    margin-top: 30px;
+}
+.separator--lg {
+    margin-top: 50px;
+}
+
+
+
+
+
+h1,h2,h3,h4,p {
+  font-family:'Lato-Bold';
+}
+
+p {
+  font-size: 14px;
+  color: #a7b2bd;
+  font-family:'Lato-Medium';
+}
+
+h1 {
+  font-size:60px;
+  font-weight:700;
+  line-height: 1.1;
+}
+
+
+h2 {
+  font-size:18px;
+  color:#000;
+}
+
+
+h3 {
+  font-size:18px;
+  color:#0176e5;
+}
+
+
+h4 {
+  font-size:16px;
+  color:#000000;
+}
+
+
+
+
+
+
+
+
+/* 2.2 - Header */
+
+
+.navbar {
+  transition-duration: 0.3s;
+  transition-delay: 0.3s
+}
+
+.navbar-default {
+background: #0084ff;
+}
+
+.navbar-default .navbar-nav li a {
+  font-family:'Lato-Bold';
+  color: #fff;
+  font-size:16px;
+  padding-top:30px;
+  padding-bottom: 30px;
+}
+
+a.navbar-brand.navbar-link { height: 100%; }
+
+
+
+.bg-dark {
+  background-color: #0084ff!important;
+}
+
+
+
+/* SECTION intro */
+
+.intro h1 {
+  margin:75px 0px 60px;
+}
+
+.intro .intro-cta{
+  margin-bottom:75px;
+}
+
+
+
+ul.negative,ul.positive {
+  margin-top:15px;
+  margin-left:32px;
+} 
+
+
+ul.negative li.negative,ul.positive li.positive{
+  font-family:'Lato-Medium';
+  font-size:20px;
+  padding:5px 45px;
+  margin-bottom:15px;
+  text-indent:15px;
+  font-weight:bold;
+  list-style:none;
+  background-repeat:no-repeat;
+}
+
+ul.negative li.negative {
+  background-image:url('http://via.placeholder.com/40x40');
+  color:#ff0042;
+}
+
+ul.positive li.positive {
+  background-image:url('http://via.placeholder.com/40x40');
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* SECTION clients */
+
+
+.clients {
+  background: rgba(1,118,229,0.1);
+}
+
+.clients .logo-wrapper {
+    padding: 35px 0;
+}
+
+
+
+
+/* SECTION how it works */
+
+.how-it-works {
+ background: linear-gradient(#fff, #e5f2ff);
+}
+
+.how-it-works .image-placeholder img{
+bottom: 0;
+}
+
+.how-it-works h3 {
+  position: relative;
+}
+.how-it-works h3::after {
+  border-bottom: 5px solid #5bc0eb;
+  bottom: -15px;
+  content: " ";
+  left: 0;
+  position: absolute;
+  right: 0;
+  width: 180px
+}
+
+
+
+
+
+
+
+/* SECTION call to action */
+
+.call-to-action {
+  background: #0084ff;
+}
+
+.call-to-action h2{
+  color:#fff;
+}
+
+
+.call-to-action .cta-wrapper {
+  padding:50px 0px 75px 0px;
+  max-width: 940px;
+  margin: auto;
+}
+
+
+/* 2.4 - Feature Highlights */
+
+.feature-highlights {
+ background: #f5faff;
+}
+
+.feature-highlights h4 {
+  padding-top: 15px;
+}
+
+
+
+
+/* SECTION feature index */
+
+.feature-index{
+background: #f5faff;
+}
+
+.card-block {
+  padding: 30px;
+}
+
+.card-block h3 {
+  color: #202020;
+  font-size:29px;
+}
+
+.card-block p {
+  color: #a7b2bd;
+}
+
+
+
+
+
+
+
+
+
+
+/* 2.4 - Footer */
+
+
+.footer-bottom {
+    border-top: 1px solid #666;
+    background: #15224f;
+}
+.copyright-text p {
+    color: #ccc;
+    margin-bottom:0px;
+    padding-left:15px;
+}
+.legal li {
+    display: inline-block;
+    margin: 0 5px;
+    padding-top: 11px;
+}
+.legal li a {
+    color: #ccc; 
+    padding-right: 15px;
+    display: inline-block;
+    font-size: 14px;
+    transition: .5s;
+}
+
+li.logo-footer {
+  display: inline-block;
+  list-style:none;
+  padding-top:0px;
+}
+
+ul.legal{
+  margin-bottom:0;
+}
+
+
+
+
+/* 4.2 - buttons */
+
+.btn-tbb{
+  background-color: #0084ff;
+  padding: 23px 20px 23px 60px;
+  font-size: 26px;
+  font-family:'Lato-Medium';
+  border-radius: 10px;
+}
+
+.btn-inverse{
+  background-color:#fff;
+  color:#0084ff;
+}
+
+
+
+
+/* 4.3 - icons */
+
+.icon .icon-messenger {
+
+}
+
+
+
+
+
+
+
+
+/* 6.0 Media Queries for Mobile */
+
+@media (min-width: 768px) {
+  .navbar-scroll-custom {
+    transform: translateY(-82px);
+    transition-duration: 0.8s;
+  }
+}
+
+@media (max-width: 768px) {
+.navbar-brand {
+  padding:0 15px;
+  }
+}
