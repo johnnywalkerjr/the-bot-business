@@ -1,3 +1,7 @@
+@import url('../css/bootstrap.min.css');
+
+
+
 @font-face {
     font-family: 'Lato-Bold';
     src: url('fonts/Lato-Bold.eot');
@@ -56,8 +60,6 @@
   5. MISCELLANOUS
   6. MOBILE MEDIA QUERIES
    ========================================================================== */
-
-
 
 
 /*1.2 - Typography*/
@@ -121,7 +123,6 @@ body {
 .separator--lg {
     margin-top: 50px;
 }
-
 
 
 h1,h2,h3,h4,p {
@@ -218,6 +219,8 @@ h3.old-way,  h3.new-way  {
 h3.old-way span,  h3.new-way span  {
   font-size:40px;
   padding-left:15px;
+  position: relative;
+  top:10px;
 }
 
 h3.old-way {
@@ -228,30 +231,26 @@ h3.new-way {
   color:#04d872;
 }
 
-ul.negative,ul.positive {
-  margin-top:15px;
-  margin-left:32px;
-} 
-
-ul.negative li.negative,ul.positive li.positive{
-  font-family:'Lato-Medium';
-  font-size:22px;
-  padding:5px 45px;
-  margin-bottom:15px;
-  text-indent:15px;
-
-  list-style:none;
-  background-repeat:no-repeat;
+ul.positive {
+list-style-image: url('../images/green-yes.png');
+float:left;
 }
 
-li.negative {
-  background-image:url('http://via.placeholder.com/40x40');
-  color:#ff0042;
+ul.negative {
+list-style-image: url('../images/red-no.png');
+float:left;
 }
 
-li.positive {
-  background-image:url('http://via.placeholder.com/40x40');
+.negative li, .positive li {
+  margin-top: 15px;
+  padding-left:15px;
+  margin-left:50px;
 }
+
+.negative li:first-child, .positive li:first-child {
+  margin-top: 30px;
+}
+
 
 /* SECTION clients */
 
@@ -269,6 +268,21 @@ li.positive {
   text-decoration: none;
 }
 
+.clients-item {
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    max-width: 170px;
+    height: 75px;
+    margin: 20px auto;
+    user-select: none;
+  }
 
 /* SECTION how it works */
 
@@ -355,7 +369,7 @@ background: #f5faff;
 
 .footer-bottom {
     background: #202020;
-    height:80px;
+    min-height:80px;
     padding:20px 0px;
 }
 .copyright-text p {
@@ -399,6 +413,11 @@ ul.legal{
   box-shadow: 0 5px 15px 0 rgba(0,0,0,0.15);
 }
 
+.btn-tbb:hover {
+  color: #fff;
+  background-color:rgba(0,105,207,0.95);
+}
+
 
 .btn-inverse{
   background-color:#fff;
@@ -408,6 +427,11 @@ ul.legal{
   font-family:'Lato-Medium';
   border-radius: 10px;
   box-shadow: 0 5px 15px 0 rgba(0,0,0,0.15);
+}
+.btn-inverse:hover {
+  background-color: rgba(255,255,255,0.95);
+  color: rgba(0,105,207,0.95);
+  border:1px solid rgba(0,105,207,0.95);
 }
 
 .btn-tbb .icon-messenger-white, .btn-inverse .icon-messenger-blue  {
@@ -429,22 +453,16 @@ ul.legal{
   height: 30px;
 }
 
-/* 4.3 - icons */
-
-
-
 
 /* 6.0 Media Queries for Mobile */
 
 @media (min-width: 768px) {
-  .navbar-scroll-custom {
-    transform: translateY(-82px);
-    transition-duration: 0.8s;
-  }
+  .navbar-scroll-custom { transform: translateY(-82px); transition-duration: 0.8s;}
+  ul.legal {text-align: right;}
 }
 
 @media (max-width: 768px) {
-.navbar-brand {
-  padding:0 15px;
-  }
+  .navbar-brand {padding:0 15px;}
+  .how-it-works-wrapper { margin-top: 30px;}
+  ul.legal {text-align: center;}
 }
