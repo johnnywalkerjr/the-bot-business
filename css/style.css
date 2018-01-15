@@ -1,12 +1,9 @@
-
-
 @font-face {
     font-family: 'Lato-Bold';
     src: url('fonts/Lato-Bold.eot');
     src: url('fonts/Lato-Bold.eot?#iefix') format('embedded-opentype'),
          url('fonts/Lato-Bold.woff') format('woff'),
          url('fonts/Lato-Bold.ttf') format('truetype'),
-    font-weight: 700;
     font-style: normal;
 }
 
@@ -16,7 +13,25 @@
     src: url('fonts/Lato-Medium.eot?#iefix') format('embedded-opentype'),
          url('fonts/Lato-Medium.woff') format('woff'),
          url('fonts/Lato-Medium.ttf') format('truetype'),
-    font-weight: 700;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Lato-Regular';
+    src: url('fonts/Lato-Regular.eot');
+    src: url('fonts/Lato-Regular.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Lato-Regular.woff') format('woff'),
+         url('fonts/Lato-Regular.ttf') format('truetype'),
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato-Light';
+    src: url('fonts/Lato-Light.eot');
+    src: url('fonts/Lato-Light.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Lato-Light.woff') format('woff'),
+         url('fonts/Lato-Light.ttf') format('truetype'),
     font-style: normal;
 }
 
@@ -54,12 +69,18 @@ body {
 }
 
 .section {
-  padding:50px 0px;
+  padding: 80px 0px 80px;
 }
 
 .section h2 {
-  font-size:42px;
-  color:#000;
+  font-size:40px;
+  color:#202020;
+  padding-bottom: 60px;
+  font-family: 'Lato-Bold';
+}
+
+.section h2 span {
+  padding-left:10px;
 }
 
 .no-bottom-margin {
@@ -68,6 +89,11 @@ body {
 
 .no-bottom-padding {
   padding-bottom: 0px;
+}
+
+.no-padding{
+  padding-top:0px;
+  padding-bottom:0px;
 }
 
 .separator {
@@ -91,13 +117,19 @@ h1,h2,h3,h4,p {
 }
 
 p {
-  font-size: 14px;
+  font-size: 16px;
   color: #a7b2bd;
   font-family:'Lato-Medium';
 }
 
+p.lead {
+  margin-top: -60px;
+  font-family:'Lato-Regular';
+  font-weight: 0;
+}
+
 h1 {
-  font-size:60px;
+  font-size:45px;
   font-weight:700;
   line-height: 1.1;
 }
@@ -105,19 +137,21 @@ h1 {
 
 h2 {
   font-size:18px;
-  color:#000;
+  color:#202020;
 }
 
 
 h3 {
-  font-size:18px;
-  color:#0176e5;
+  font-size:27px;
+  color:#0084ff;
+  font-family:'Lato-Medium';
 }
 
 
 h4 {
-  font-size:16px;
-  color:#000000;
+  font-size:22px;
+  color:#202020;
+  font-family:'Lato-Medium';
 }
 
 /* 2.2 - Header */
@@ -162,6 +196,18 @@ a.navbar-brand.navbar-link { height: 100%; }
   margin-bottom:75px;
 }
 
+h3.old-way,  h3.new-way  {
+  text-transform:uppercase;
+  padding-bottom: 15px;
+}
+
+h3.old-way {
+  color:#ff0042;
+}
+
+h3.new-way {
+  color:#04d872;
+}
 
 ul.negative,ul.positive {
   margin-top:15px;
@@ -170,11 +216,11 @@ ul.negative,ul.positive {
 
 ul.negative li.negative,ul.positive li.positive{
   font-family:'Lato-Medium';
-  font-size:20px;
+  font-size:22px;
   padding:5px 45px;
   margin-bottom:15px;
   text-indent:15px;
-  font-weight:bold;
+
   list-style:none;
   background-repeat:no-repeat;
 }
@@ -218,14 +264,20 @@ bottom: 0;
 .how-it-works h3 {
   position: relative;
 }
+
 .how-it-works h3::after {
-  border-bottom: 5px solid #5bc0eb;
+  border-bottom: 5px solid #0084ff;
   bottom: -15px;
   content: " ";
   left: 0;
   position: absolute;
   right: 0;
-  width: 180px
+  width: 250px
+}
+
+.how-it-works span.step{
+  color: #97b2bd;
+  padding-right:15px;
 }
 
 /* SECTION call to action */
@@ -253,7 +305,7 @@ bottom: 0;
 }
 
 .feature-highlights h4 {
-  padding-top: 15px;
+  padding: 40px 0 12px 0;
 }
 
 
@@ -317,15 +369,37 @@ ul.legal{
 
 .btn-tbb{
   background-color: #0084ff;
-  padding: 23px 20px 23px 60px;
-  font-size: 26px;
+  padding: 23px 20px 23px 23px;
+  font-size: 20px;
   font-family:'Lato-Medium';
   border-radius: 10px;
+  box-shadow: 0 5px 15px 0 rgba(0,0,0,0.15);
 }
+
 
 .btn-inverse{
   background-color:#fff;
   color:#0084ff;
+  padding: 23px 20px 23px 23px;
+  font-size: 20px;
+  font-family:'Lato-Medium';
+  border-radius: 10px;
+  box-shadow: 0 5px 15px 0 rgba(0,0,0,0.15);
+}
+
+.btn-tbb .icon-messenger-white, .btn-inverse .icon-messenger-blue  {
+  float: left;
+  width: 40px;
+  height: 40px;
+  margin-right:15px;
+}
+
+.btn-inverse .icon-messenger-blue {
+  background: url(http://via.placeholder.com/50x50) no-repeat;
+}
+
+.btn-tbb .icon-messenger-white {
+  background: url(http://via.placeholder.com/50x50) no-repeat;
 }
 
 /* 4.3 - icons */
