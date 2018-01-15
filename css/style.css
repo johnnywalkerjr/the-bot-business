@@ -76,11 +76,23 @@ body {
   font-size:40px;
   color:#202020;
   padding-bottom: 60px;
-  font-family: 'Lato-Bold';
+  font-family: 'Lato-Medium';
 }
 
 .section h2 span {
   padding-left:10px;
+}
+
+.section-background {
+  position: relative;
+  background-color: transparent;
+  background-repeat: no-repeat;
+}
+
+.position--right-top {
+  position: absolute;
+  top: -80px;
+  right: 0;
 }
 
 .no-bottom-margin {
@@ -199,6 +211,13 @@ a.navbar-brand.navbar-link { height: 100%; }
 h3.old-way,  h3.new-way  {
   text-transform:uppercase;
   padding-bottom: 15px;
+  font-size: 16px;
+}
+
+
+h3.old-way span,  h3.new-way span  {
+  font-size:40px;
+  padding-left:15px;
 }
 
 h3.old-way {
@@ -225,12 +244,12 @@ ul.negative li.negative,ul.positive li.positive{
   background-repeat:no-repeat;
 }
 
-ul.negative li.negative {
+li.negative {
   background-image:url('http://via.placeholder.com/40x40');
   color:#ff0042;
 }
 
-ul.positive li.positive {
+li.positive {
   background-image:url('http://via.placeholder.com/40x40');
 }
 
@@ -257,9 +276,6 @@ ul.positive li.positive {
  background: linear-gradient(#fff, #e5f2ff);
 }
 
-.how-it-works .image-placeholder img{
-bottom: 0;
-}
 
 .how-it-works h3 {
   position: relative;
@@ -280,6 +296,12 @@ bottom: 0;
   padding-right:15px;
 }
 
+.how-it-works-wrapper {
+  margin-top: 100px;
+  }
+
+
+
 /* SECTION call to action */
 
 .call-to-action {
@@ -292,7 +314,6 @@ bottom: 0;
 
 
 .call-to-action .cta-wrapper {
-  padding:50px 0px 75px 0px;
   max-width: 940px;
   margin: auto;
 }
@@ -333,8 +354,9 @@ background: #f5faff;
 
 
 .footer-bottom {
-    border-top: 1px solid #666;
-    background: #15224f;
+    background: #202020;
+    height:80px;
+    padding:20px 0px;
 }
 .copyright-text p {
     color: #ccc;
@@ -362,6 +384,7 @@ li.logo-footer {
 
 ul.legal{
   margin-bottom:0;
+  padding-left:0px;
 }
 
 
@@ -395,11 +418,15 @@ ul.legal{
 }
 
 .btn-inverse .icon-messenger-blue {
-  background: url(http://via.placeholder.com/50x50) no-repeat;
+  background: url('../css/sprite/sprite-filex1.png') no-repeat -360px -10px;
+  width: 30px;
+  height: 30px;
 }
 
 .btn-tbb .icon-messenger-white {
-  background: url(http://via.placeholder.com/50x50) no-repeat;
+  background: url('../css/sprite/sprite-filex1.png') no-repeat -10px -10px;
+  width: 30px;
+  height: 30px;
 }
 
 /* 4.3 - icons */
