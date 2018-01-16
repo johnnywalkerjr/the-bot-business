@@ -62,14 +62,6 @@
    ========================================================================== */
 
 
-/*1.2 - Typography*/
-
-
-
-body {
- 
-}
-
 .section {
   padding: 80px 0px 80px;
 }
@@ -125,6 +117,8 @@ body {
 }
 
 
+/*1.2 - Typography*/
+
 h1,h2,h3,h4,p {
   font-family:'Lato-Bold';
 }
@@ -176,7 +170,7 @@ h4 {
 }
 
 .navbar-default {
-background: #0084ff;
+  background: #0084ff;
 }
 
 .navbar-default .navbar-nav li a {
@@ -189,15 +183,14 @@ background: #0084ff;
 
 a.navbar-brand.navbar-link { height: 100%; }
 
-
 .navbar-dark .navbar-nav .nav-link {
   color: rgb(255,255,255);
 }
+
 .bg-dark {
   background-color: #0084ff!important;
   box-shadow: 0 5px 15px 0 rgba(0,0,0,0.15);
 }
-
 
 /* SECTION intro */
 
@@ -214,7 +207,6 @@ h3.old-way,  h3.new-way  {
   padding-bottom: 15px;
   font-size: 16px;
 }
-
 
 h3.old-way span,  h3.new-way span  {
   font-size:40px;
@@ -251,9 +243,7 @@ float:left;
   margin-top: 30px;
 }
 
-
 /* SECTION clients */
-
 
 .clients {
   background: rgba(1,118,229,0.1);
@@ -268,6 +258,16 @@ float:left;
   text-decoration: none;
 }
 
+.vert-center {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.vert-center img {
+  margin-right:auto;
+  margin-left:auto;
+}
 
 /* SECTION how it works */
 
@@ -297,7 +297,16 @@ float:left;
 
 .how-it-works-wrapper {
   margin-top: 100px;
-  }
+}
+
+a.fb-tabber:active{
+  color: #0084ff;
+}
+
+a.fb-tabber:focus{
+  opacity: 0.5;
+}
+
 
 
 
@@ -311,12 +320,10 @@ float:left;
   color:#fff;
 }
 
-
 .call-to-action .cta-wrapper {
   max-width: 940px;
   margin: auto;
 }
-
 
 /* 2.4 - Feature Highlights */
 
@@ -327,7 +334,6 @@ float:left;
 .feature-highlights h4 {
   padding: 40px 0 12px 0;
 }
-
 
 /* SECTION feature index */
 
@@ -348,9 +354,7 @@ background: #f5faff;
   color: #a7b2bd;
 }
 
-
 /* 2.4 - Footer */
-
 
 .footer-bottom {
     background: #202020;
@@ -362,12 +366,12 @@ background: #f5faff;
     margin-bottom:0px;
     padding-left:15px;
 }
-.legal li {
+.legal li, .company li {
     display: inline-block;
     margin: 0 5px;
     padding-top: 11px;
 }
-.legal li a {
+.legal li a, .company li a{
     color: #ccc; 
     padding-right: 15px;
     display: inline-block;
@@ -381,11 +385,10 @@ li.logo-footer {
   padding-top:0px;
 }
 
-ul.legal{
+ul.legal, ul.company{
   margin-bottom:0;
   padding-left:0px;
 }
-
 
 /* 4.2 - buttons */
 
@@ -403,7 +406,6 @@ ul.legal{
   background-color:rgba(0,105,207,0.95);
 }
 
-
 .btn-inverse{
   background-color:#fff;
   color:#0084ff;
@@ -413,6 +415,7 @@ ul.legal{
   border-radius: 10px;
   box-shadow: 0 5px 15px 0 rgba(0,0,0,0.15);
 }
+
 .btn-inverse:hover {
   background-color: rgba(255,255,255,0.95);
   color: rgba(0,105,207,0.95);
@@ -450,4 +453,6 @@ ul.legal{
   .navbar-brand {padding:0 15px;}
   .how-it-works-wrapper { margin-top: 30px;}
   ul.legal {text-align: center;}
+  ul.company {text-align: center; padding: 10px 0px 15px;}
+  li.separator-logo{display: none;}
 }
