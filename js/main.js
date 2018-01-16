@@ -122,9 +122,4 @@ function throttle(func, wait) {
   return throttled;
 }
 
-//change tab//  
 
-$document.on('click', '[data-video-tabs-controls] .nav-link', function(e) { 
-  $('[data-video-tabs-controls] .nav-link').removeClass('active');
-  $(this).addClass('active')
-})
