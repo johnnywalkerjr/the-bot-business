@@ -275,7 +275,6 @@ float:left;
  background: linear-gradient(#fff, #e5f2ff);
 }
 
-
 .how-it-works h3 {
   position: relative;
 }
@@ -306,8 +305,6 @@ a.fb-tabber:active{
 a.fb-tabber:focus{
   opacity: 0.5;
 }
-
-
 
 
 /* SECTION call to action */
@@ -352,6 +349,7 @@ background: #f5faff;
 
 .card-block p {
   color: #a7b2bd;
+  font-family: 'lato-regular';
 }
 
 /* 2.4 - Footer */
