@@ -1,43 +1,4 @@
-@import url('css/bootstrap.min.css');
-
-
-
-@font-face {
-    font-family: 'Lato-Bold';
-    src: url('css/fonts/Lato-Bold.eot');
-    src: url('css/fonts/Lato-Bold.eot?#iefix') format('embedded-opentype'),
-         url('css/fonts/Lato-Bold.woff') format('woff'),
-         url('css/fonts/Lato-Bold.ttf') format('truetype'),
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Lato-Medium';
-    src: url('css/fonts/Lato-Medium.eot');
-    src: url('css/fonts/Lato-Medium.eot?#iefix') format('embedded-opentype'),
-         url('css/fonts/Lato-Medium.woff') format('woff'),
-         url('css/fonts/Lato-Medium.ttf') format('truetype'),
-    font-style: normal;
-}
-
-
-@font-face {
-    font-family: 'Lato-Regular';
-    src: url('css/fonts/Lato-Regular.eot');
-    src: url('css/fonts/Lato-Regular.eot?#iefix') format('embedded-opentype'),
-         url('css/fonts/Lato-Regular.woff') format('woff'),
-         url('css/fonts/Lato-Regular.ttf') format('truetype'),
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Lato-Light';
-    src: url('css/fonts/Lato-Light.eot');
-    src: url('css/fonts/Lato-Light.eot?#iefix') format('embedded-opentype'),
-         url('css/fonts/Lato-Light.woff') format('woff'),
-         url('css/fonts/Lato-Light.ttf') format('truetype'),
-    font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
 
 
 /* ==========================================================================
@@ -70,7 +31,8 @@
   font-size:40px;
   color:#202020;
   padding-bottom: 60px;
-  font-family: 'Lato-Medium';
+  font-weight:400;
+
 }
 
 .section h2 span {
@@ -119,20 +81,23 @@
 
 /*1.2 - Typography*/
 
+body {
+  font-family: 'Lato', sans-serif;
+}
+
 h1,h2,h3,h4,p {
-  font-family:'Lato-Bold';
+  font-family: 'Lato', sans-serif;
 }
 
 p {
   font-size: 16px;
   color: #a7b2bd;
-  font-family:'Lato-Medium';
+  font-weight:400;
 }
 
 p.lead {
   margin-top: -60px;
-  font-family:'Lato-Regular';
-  font-weight: 0;
+  font-weight: 400;
 }
 
 h1 {
@@ -151,14 +116,14 @@ h2 {
 h3 {
   font-size:27px;
   color:#0084ff;
-  font-family:'Lato-Medium';
+  font-weight:400;
 }
 
 
 h4 {
   font-size:22px;
   color:#202020;
-  font-family:'Lato-Medium';
+  font-weight:400;
 }
 
 /* 2.2 - Header */
@@ -174,7 +139,7 @@ h4 {
 }
 
 .navbar-default .navbar-nav li a {
-  font-family:'Lato-Bold';
+  font-weight: 700;
   color: #fff;
   font-size:16px;
   padding-top:30px;
@@ -239,6 +204,11 @@ float:left;
   margin-left:50px;
 }
 
+.negative li span, .positive li span {
+  position: relative;
+  bottom:10px;
+}
+
 .negative li:first-child, .positive li:first-child {
   margin-top: 30px;
 }
@@ -286,7 +256,7 @@ float:left;
   left: 0;
   position: absolute;
   right: 0;
-  width: 250px
+  width: 320px
 }
 
 .how-it-works span.step{
@@ -309,6 +279,9 @@ float:left;
     opacity: 1;
 }
 
+.video-wrapper {
+box-shadow: 0 5px 15px 0 rgba(0,0,0,0.3);
+}
 
 
 
@@ -354,7 +327,7 @@ background: #f5faff;
 
 .card-block p {
   color: #a7b2bd;
-  font-family: 'lato-regular';
+  font-weight: 400;
 }
 
 /* 2.4 - Footer */
@@ -399,7 +372,7 @@ ul.legal, ul.company{
   background-color: #0084ff;
   padding: 23px 20px 23px 23px;
   font-size: 20px;
-  font-family:'Lato-Medium';
+  font-weight: 400;
   border-radius: 10px;
   box-shadow: 0 5px 15px 0 rgba(0,0,0,0.15);
 }
@@ -412,9 +385,9 @@ ul.legal, ul.company{
 .btn-inverse{
   background-color:#fff;
   color:#0084ff;
-  padding: 23px 20px 23px 23px;
+  padding: 20px 20px 15px 23px;
   font-size: 20px;
-  font-family:'Lato-Medium';
+  font-weight: 400;
   border-radius: 10px;
   box-shadow: 0 5px 15px 0 rgba(0,0,0,0.15);
 }
@@ -425,23 +398,32 @@ ul.legal, ul.company{
   border:1px solid rgba(0,105,207,0.95);
 }
 
-.btn-tbb .icon-messenger-white, .btn-inverse .icon-messenger-blue  {
+/* 4.2 - icons */
+
+.icon-messenger-white, .btn-inverse .icon-messenger-blue  {
   float: left;
   width: 40px;
   height: 40px;
   margin-right:15px;
 }
 
-.btn-inverse .icon-messenger-blue {
+.icon-messenger-blue {
   background: url('../css/sprite/sprite-filex1.png') no-repeat -360px -10px;
   width: 30px;
   height: 30px;
 }
 
-.btn-tbb .icon-messenger-white {
+.icon-messenger-white {
   background: url('../css/sprite/sprite-filex1.png') no-repeat -10px -10px;
   width: 30px;
   height: 30px;
+}
+
+
+.icon-robot {
+  background: url('../css/sprite/sprite-filex1.png') no-repeat -403px 0;
+  width: 45px;
+  height: 48px;
 }
 
 
